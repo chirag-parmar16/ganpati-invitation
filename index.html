@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GANPATI UTSAV 2026 &bull; Royal Rolex Master Invitation</title>
+    <meta
+      name="description"
+      content="Official Royal Invitation for Shree Ganesh Utsav 2026."
+    />
+
+    <!-- Google Fonts: Cormorant Garamond & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Vector Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- GSAP & Lenis Smooth Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Ambient Rolex Luxury Spotlight Background -->
+    <div class="ambient-spotlight" id="ambientSpotlight"></div>
+
+    <!-- Luxury Sticky Navigation Bar (Gated Until Entrance Reveal Completes) -->
+    <header class="luxury-navbar-wrapper" id="luxuryNavbar">
+      <nav class="luxury-navbar">
+        <a href="#hero" class="nav-brand">
+          <i class="fa-solid fa-crown brand-icon"></i>
+          <span class="brand-name">SHREE GANESH UTSAV</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Utsav</a></li>
+          <li><a href="#schedule" class="nav-link">Schedule</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#location" class="nav-link">Location</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="nav-btn-shehnai" id="navBtnShehnai">
+            <i class="fa-solid fa-music"></i>
+            <span class="btn-text">Shehnai</span>
+          </button>
+          <button class="nav-btn-rsvp" id="navBtnRsvp">RSVP NOW</button>
+          <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Toggle Menu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Toast Notification for RSVP & Share -->
+    <div class="luxury-toast" id="luxuryToast">
+      <div class="toast-icon" id="toastIcon">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="toast-body">
+        <h5 id="toastTitle">Notification</h5>
+        <p id="toastMessage">Action completed successfully.</p>
+      </div>
+    </div>
+
+    <main>
+      <!-- 1. DUAL HERO SECTION (DESKTOP TWIN CARDS + MOBILE ROYAL ARCH INVITATION CARD) -->
+      <section class="hero-clip-section" id="hero">
+        <div class="hero-sticky-container">
+          <!-- Initial Unrevealed Devotional Cover Layer (zero_click.png + Split Typography) -->
+          <div class="hero-cover-wrapper" id="heroCoverLayer">
+            <img
+              src="images/zero_click.png"
+              alt="Shree Ganesh Utsav 2026 Cover"
+              class="zero-click-cover-img"
+              id="zeroClickCover"
+            />
+            <h1 class="parallax-text-left">SHREE GANESH</h1>
+            <h1 class="parallax-text-right outline-text">UTSAV 2026</h1>
+          </div>
+
+          <!-- Image Wrapper & Layered Revealed Content -->
+          <div class="clip-image-wrapper" id="heroClipMask">
+            <!-- Layer 1: Base Background Image (hero_ganesha.png) -->
+            <img
+              src="images/hero_ganesha.png"
+              alt="Shree Ganesh Utsav 2026 Base"
+              class="hero-blazer-img"
+              id="heroBlazer"
+            />
+            <div class="hero-gradient-overlay" id="heroOverlay"></div>
+
+            <!-- Layer 2: Revealed Background Without Idol (without_idol.png, z-index: 2) -->
+            <div class="hero-revealed-bg" id="heroRevealedBg">
+              <img
+                src="images/without_idol.png"
+                alt="Shree Ganesh Mandap Without Idol"
+                class="revealed-mandap-img"
+              />
+
+              <!-- Mobile Only: Upper Corner Marigold Garlands -->
+              <div class="marigold-garland-left">
+                <i class="fa-solid fa-om garland-icon"></i>
+              </div>
+              <div class="marigold-garland-right">
+                <i class="fa-solid fa-om garland-icon"></i>
+              </div>
+            </div>
+
+            <!-- Layer 3: Pure Glowing Blended Divine Sunburst Rays Halo (z-index: 8 - behind idol head) -->
+            <div class="divine-chakra-halo" id="divineChakra">
+              <div class="chakra-outer-sunburst"></div>
+
+              <svg viewBox="0 0 300 300" class="chakra-svg-wheel">
+                <defs>
+                  <radialGradient id="blendedRayGrad" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="rgba(255, 245, 157, 1)" />
+                    <stop offset="35%" stop-color="rgba(255, 213, 79, 0.85)" />
+                    <stop offset="70%" stop-color="rgba(255, 179, 0, 0.45)" />
+                    <stop offset="100%" stop-color="rgba(255, 143, 0, 0)" />
+                  </radialGradient>
+                </defs>
+
+                <!-- 36 Pure Soft Blended Radiating Sun Rays -->
+                <g class="blended-rays-group">
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(10 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(20 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(30 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(40 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(50 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(60 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(70 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(80 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(90 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(100 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(110 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(120 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(130 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(140 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(150 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(160 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(170 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(180 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(190 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(200 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(210 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(220 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(230 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(240 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(250 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(260 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(270 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(280 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(290 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(300 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(310 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(320 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(330 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(340 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                  <polygon
+                    points="150,10 142,100 158,100"
+                    transform="rotate(350 150 150)"
+                    fill="url(#blendedRayGrad)"
+                  />
+                </g>
+
+                <circle
+                  cx="150"
+                  cy="150"
+                  r="55"
+                  fill="rgba(255, 235, 59, 0.95)"
+                />
+              </svg>
+            </div>
+
+            <!-- DESKTOP ONLY: Left-Side Floating Info & CTA Card (z-index: 5) -->
+            <aside class="hero-left-panel" id="heroLeftPanel">
+              <div class="left-panel-content">
+                <span class="left-tag"
+                  ><i class="fa-solid fa-crown"></i> SHREE GANESHAY NAMAH</span
+                >
+
+                <h2 class="left-shloka">
+                  ॥ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ ।<br />
+                  निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥
+                </h2>
+
+                <p class="left-lead">
+                  The <strong>Rane &amp; Deshmukh Family</strong> cordially
+                  invites you and your esteemed family to grace the divine
+                  arrival of Lord Ganesha at our grand pavilion.
+                </p>
+
+                <div class="left-actions-col">
+                  <button class="btn-solid-gold" id="btnRsvp">
+                    <i class="fa-solid fa-envelope-open-text icon-left"></i>
+                    Confirm RSVP
+                  </button>
+                  <button class="btn-solid-green" id="btnShehnai">
+                    <i class="fa-solid fa-music icon-left"></i> Royal Shehnai
+                  </button>
+                </div>
+              </div>
+            </aside>
+
+            <!-- DESKTOP ONLY: Right-Side Floating Year Heritage Gallery Panel (z-index: 5) -->
+            <aside class="hero-right-panel" id="heroRightPanel">
+              <div class="marquee-viewport">
+                <div class="vertical-timeline-container">
+                  <div class="center-line"></div>
+
+                  <div class="marquee-track">
+                    <!-- Year 2020 (Odd - Left) -->
+                    <div class="gallery-item odd-item">
+                      <div class="gallery-card luxury-year-card">
+                        <img src="images/hero_ganesha.png" alt="Utsav 2020" />
+                        <div class="card-bottom-content">
+                          <span class="chapter-tag">CHAPTER I &bull; 2020</span>
+                          <h4 class="card-year-title">Utsav 2020</h4>
+                          <p class="card-year-desc">
+                            First divine sthapna celebration &amp; mahapooja
+                          </p>
+                        </div>
+                      </div>
+                      <div class="timeline-node">
+                        <i class="fa-solid fa-om"></i>
+                      </div>
+                    </div>
+
+                    <!-- Year 2021 (Even - Right) -->
+                    <div class="gallery-item even-item">
+                      <div class="timeline-node">
+                        <i class="fa-solid fa-om"></i>
+                      </div>
+                      <div class="gallery-card luxury-year-card">
+                        <img src="images/hero_ganesha.png" alt="Utsav 2021" />
+                        <div class="card-bottom-content">
+                          <span class="chapter-tag"
+                            >CHAPTER II &bull; 2021</span
+                          >
+                          <h4 class="card-year-title">Utsav 2021</h4>
+                          <p class="card-year-desc">
+                            2nd year royal aarti &amp; grand decorations
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Year 2022 (Odd - Left) -->
+                    <div class="gallery-item odd-item">
+                      <div class="gallery-card luxury-year-card">
+                        <img src="images/hero_ganesha.png" alt="Utsav 2022" />
+                        <div class="card-bottom-content">
+                          <span class="chapter-tag"
+                            >CHAPTER III &bull; 2022</span
+                          >
+                          <h4 class="card-year-title">Utsav 2022</h4>
+                          <p class="card-year-desc">
+                            3rd year cultural evening &amp; maha bhog
+                          </p>
+                        </div>
+                      </div>
+                      <div class="timeline-node">
+                        <i class="fa-solid fa-om"></i>
+                      </div>
+                    </div>
+
+                    <!-- Year 2023 (Even - Right) -->
+                    <div class="gallery-item even-item">
+                      <div class="timeline-node">
+                        <i class="fa-solid fa-om"></i>
+                      </div>
+                      <div class="gallery-card luxury-year-card">
+                        <img src="images/hero_ganesha.png" alt="Utsav 2023" />
+                        <div class="card-bottom-content">
+                          <span class="chapter-tag"
+                            >CHAPTER IV &bull; 2023</span
+                          >
+                          <h4 class="card-year-title">Utsav 2023</h4>
+                          <p class="card-year-desc">
+                            4th year golden pavilion &amp; grand darshan
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Year 2024 (Odd - Left) -->
+                    <div class="gallery-item odd-item">
+                      <div class="gallery-card luxury-year-card">
+                        <img src="images/hero_ganesha.png" alt="Utsav 2024" />
+                        <div class="card-bottom-content">
+                          <span class="chapter-tag">CHAPTER V &bull; 2024</span>
+                          <h4 class="card-year-title">Utsav 2024</h4>
+                          <p class="card-year-desc">
+                            5th year dhol tasha procession &amp; visarjan
+                          </p>
+                        </div>
+                      </div>
+                      <div class="timeline-node">
+                        <i class="fa-solid fa-om"></i>
+                      </div>
+                    </div>
+
+                    <!-- Year 2025 (Even - Right) -->
+                    <div class="gallery-item even-item">
+                      <div class="timeline-node">
+                        <i class="fa-solid fa-om"></i>
+                      </div>
+                      <div class="gallery-card luxury-year-card">
+                        <img src="images/hero_ganesha.png" alt="Utsav 2025" />
+                        <div class="card-bottom-content">
+                          <span class="chapter-tag"
+                            >CHAPTER VI &bull; 2025</span
+                          >
+                          <h4 class="card-year-title">Utsav 2025</h4>
+                          <p class="card-year-desc">
+                            6th year divine heritage celebration
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- DUPLICATED SET FOR SEAMLESS 100% INFINITE LOOP -->
+                    <div class="gallery-item odd-item">
+                      <div class="gallery-card luxury-year-card">
+                        <img src="images/hero_ganesha.png" alt="Utsav 2020" />
+                        <div class="card-bottom-content">
+                          <span class="chapter-tag">CHAPTER I &bull; 2020</span>
+                          <h4 class="card-year-title">Utsav 2020</h4>
+                          <p class="card-year-desc">
+                            First divine sthapna celebration &amp; mahapooja
+                          </p>
+                        </div>
+                      </div>
+                      <div class="timeline-node">
+                        <i class="fa-solid fa-om"></i>
+                      </div>
+                    </div>
+
+                    <div class="gallery-item even-item">
+                      <div class="timeline-node">
+                        <i class="fa-solid fa-om"></i>
+                      </div>
+                      <div class="gallery-card luxury-year-card">
+                        <img src="images/hero_ganesha.png" alt="Utsav 2021" />
+                        <div class="card-bottom-content">
+                          <span class="chapter-tag"
+                            >CHAPTER II &bull; 2021</span
+                          >
+                          <h4 class="card-year-title">Utsav 2021</h4>
+                          <p class="card-year-desc">
+                            2nd year royal aarti &amp; grand decorations
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="gallery-item odd-item">
+                      <div class="gallery-card luxury-year-card">
+                        <img src="images/hero_ganesha.png" alt="Utsav 2022" />
+                        <div class="card-bottom-content">
+                          <span class="chapter-tag"
+                            >CHAPTER III &bull; 2022</span
+                          >
+                          <h4 class="card-year-title">Utsav 2022</h4>
+                          <p class="card-year-desc">
+                            3rd year cultural evening &amp; maha bhog
+                          </p>
+                        </div>
+                      </div>
+                      <div class="timeline-node">
+                        <i class="fa-solid fa-om"></i>
+                      </div>
+                    </div>
+
+                    <div class="gallery-item even-item">
+                      <div class="timeline-node">
+                        <i class="fa-solid fa-om"></i>
+                      </div>
+                      <div class="gallery-card luxury-year-card">
+                        <img src="images/hero_ganesha.png" alt="Utsav 2023" />
+                        <div class="card-bottom-content">
+                          <span class="chapter-tag"
+                            >CHAPTER IV &bull; 2023</span
+                          >
+                          <h4 class="card-year-title">Utsav 2023</h4>
+                          <p class="card-year-desc">
+                            4th year golden pavilion &amp; grand darshan
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="gallery-item odd-item">
+                      <div class="gallery-card luxury-year-card">
+                        <img src="images/hero_ganesha.png" alt="Utsav 2024" />
+                        <div class="card-bottom-content">
+                          <span class="chapter-tag">CHAPTER V &bull; 2024</span>
+                          <h4 class="card-year-title">Utsav 2024</h4>
+                          <p class="card-year-desc">
+                            5th year dhol tasha procession &amp; visarjan
+                          </p>
+                        </div>
+                      </div>
+                      <div class="timeline-node">
+                        <i class="fa-solid fa-om"></i>
+                      </div>
+                    </div>
+
+                    <div class="gallery-item even-item">
+                      <div class="timeline-node">
+                        <i class="fa-solid fa-om"></i>
+                      </div>
+                      <div class="gallery-card luxury-year-card">
+                        <img src="images/hero_ganesha.png" alt="Utsav 2025" />
+                        <div class="card-bottom-content">
+                          <span class="chapter-tag"
+                            >CHAPTER VI &bull; 2025</span
+                          >
+                          <h4 class="card-year-title">Utsav 2025</h4>
+                          <p class="card-year-desc">
+                            6th year divine heritage celebration
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <!-- MOBILE ONLY: Integrated Royal Arch Invitation Plaque (z-index: 5) -->
+            <aside class="royal-arch-plaque" id="royalArchPlaque">
+              <div class="arch-top-ornament">
+                <i class="fa-solid fa-om lotus-icon"></i>
+              </div>
+
+              <div class="plaque-body-content">
+                <span class="plaque-shloka-head">SHREE GANESHAY NAMAH</span>
+                <h3 class="plaque-family-host">
+                  The Rane &amp; Deshmukh Family
+                </h3>
+
+                <p class="plaque-invitation-text">
+                  cordially invites you to grace the divine arrival of Lord
+                  Ganesha at our grand pavilion.
+                </p>
+
+                <!-- Event Details Grid Rows with Gold Line Icons -->
+                <div class="plaque-event-details">
+                  <div class="detail-box">
+                    <i class="fa-solid fa-calendar-day icon-gold"></i>
+                    <div class="detail-text">
+                      <strong>07 SEPTEMBER 2026</strong>
+                      <span>Sunday</span>
+                    </div>
+                  </div>
+
+                  <div class="detail-box">
+                    <i class="fa-solid fa-clock icon-gold"></i>
+                    <div class="detail-text">
+                      <strong>06:30 PM</strong>
+                      <span>Onwards</span>
+                    </div>
+                  </div>
+
+                  <div class="detail-box">
+                    <i class="fa-solid fa-location-dot icon-gold"></i>
+                    <div class="detail-text">
+                      <strong>RANE RESIDENCE</strong>
+                      <span>Mumbai, Maharashtra</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Primary & Secondary CTA Buttons -->
+                <div class="plaque-cta-group">
+                  <button
+                    class="btn-royal-gold-engraved"
+                    id="btnAcceptInvitation"
+                  >
+                    <i class="fa-solid fa-envelope-open-text icon-left"></i>
+                    ACCEPT INVITATION
+                  </button>
+                  <button class="btn-text-gold-share" id="btnShareInvitation">
+                    <i class="fa-solid fa-share-nodes icon-left"></i> SHARE
+                    INVITATION
+                  </button>
+                </div>
+              </div>
+            </aside>
+
+            <!-- Layer 5: Highest Z-Index Isolated Floating Idol & Aasan (idol.png, z-index: 10) -->
+            <div class="hero-foreground-idol" id="heroIdolCutout">
+              <img
+                src="images/idol.png"
+                alt="Shree Ganesh Floating Idol &amp; Aasan"
+                class="idol-cutout-img"
+              />
+            </div>
+          </div>
+
+          <div class="scroll-down-indicator">
+            <span>CLICK TO REVEAL</span>
+            <div class="line"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. ABOUT UTSAV & DIVINE HERITAGE SECTION -->
+      <section class="about-section" id="about">
+        <div class="section-container">
+          <div class="section-header center">
+            <span class="section-tag"
+              ><i class="fa-solid fa-om"></i> DIVINE HERITAGE</span
+            >
+            <h2 class="section-title">
+              A Legacy of Devotion &amp; Royal Tradition
+            </h2>
+            <div class="header-divider"></div>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <div class="about-icon">
+                <i class="fa-solid fa-place-of-worship"></i>
+              </div>
+              <h3>Grand Golden Pavilion</h3>
+              <p>
+                Experiencing 6 glorious years of royal mandap decorations,
+                traditional wooden carving art, and sacred Vedic prana
+                pratishtha rituals.
+              </p>
+            </div>
+
+            <div class="about-card active">
+              <div class="about-icon">
+                <i class="fa-solid fa-hands-holding-circle"></i>
+              </div>
+              <h3>Community Maha Bhog</h3>
+              <p>
+                Serving over 50,000+ devotees with pure organic prasad, modak
+                mahabhog, and traditional community feasts throughout the 11-day
+                celebration.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <div class="about-icon"><i class="fa-solid fa-drum"></i></div>
+              <h3>Dhol Tasha &amp; Visarjan</h3>
+              <p>
+                Reverberating the streets with authentic Puneri Dhol Tasha
+                pathaks, shehnai vadya, and grand farewell visarjan processions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Counter Stats Bar -->
+          <div class="stats-counter-bar">
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Years of Legacy</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">50K+</span>
+              <span class="stat-label">Devotees Welcomed</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">11</span>
+              <span class="stat-label">Days of Celebration</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Eco-Friendly Idol</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. FESTIVAL SCHEDULE & TIMELINE SECTION -->
+      <section class="schedule-section" id="schedule">
+        <div class="section-container">
+          <div class="section-header center">
+            <span class="section-tag"
+              ><i class="fa-solid fa-calendar-days"></i> UTSAV PROGRAMME</span
+            >
+            <h2 class="section-title">
+              Festival Highlights &amp; Daily Rituals
+            </h2>
+            <div class="header-divider"></div>
+          </div>
+
+          <div class="schedule-tabs">
+            <button class="tab-btn active" data-tab="all">All Events</button>
+            <button class="tab-btn" data-tab="pooja">
+              Rituals &amp; Pooja
+            </button>
+            <button class="tab-btn" data-tab="cultural">Cultural Nights</button>
+            <button class="tab-btn" data-tab="visarjan">
+              Miravuk Visarjan
+            </button>
+          </div>
+
+          <div class="schedule-grid">
+            <div class="schedule-card" data-category="pooja">
+              <div class="schedule-time-badge">07 SEP &bull; 09:00 AM</div>
+              <div class="schedule-card-body">
+                <h4>Aagman Sohala &amp; Welcoming</h4>
+                <p>
+                  Grand arrival procession with royal shehnai vadya and gulal
+                  celebration.
+                </p>
+              </div>
+            </div>
+
+            <div class="schedule-card" data-category="pooja">
+              <div class="schedule-time-badge">07 SEP &bull; 11:30 AM</div>
+              <div class="schedule-card-body">
+                <h4>Prana Pratishtha &amp; Vedic Pooja</h4>
+                <p>
+                  Chanting of Atharvashirsha &amp; solemn sthapna mahapooja by
+                  Vedic brahmins.
+                </p>
+              </div>
+            </div>
+
+            <div class="schedule-card" data-category="pooja">
+              <div class="schedule-time-badge">EVERYDAY &bull; 07:30 PM</div>
+              <div class="schedule-card-body">
+                <h4>Royal Shehnai Maha Aarti</h4>
+                <p>
+                  108-lamp dhoop deep aarti accompanied by live dhol tasha beat.
+                </p>
+              </div>
+            </div>
+
+            <div class="schedule-card" data-category="cultural">
+              <div class="schedule-time-badge">09 SEP &bull; 06:00 PM</div>
+              <div class="schedule-card-body">
+                <h4>Classical Music &amp; Bhajan Sandhya</h4>
+                <p>
+                  Enchanting devotional bhajan sandhya by renowned classical
+                  vocalists.
+                </p>
+              </div>
+            </div>
+
+            <div class="schedule-card" data-category="cultural">
+              <div class="schedule-time-badge">10 SEP &bull; 01:00 PM</div>
+              <div class="schedule-card-body">
+                <h4>Grand Community Maha Prasad</h4>
+                <p>
+                  Holy Modak bhog distribution &amp; traditional Maharashtrian
+                  mahaprasad feast.
+                </p>
+              </div>
+            </div>
+
+            <div class="schedule-card" data-category="visarjan">
+              <div class="schedule-time-badge">17 SEP &bull; 05:00 PM</div>
+              <div class="schedule-card-body">
+                <h4>Miravuk Farewell Visarjan</h4>
+                <p>
+                  Grand farewell procession with Puneri dhol tasha pathak &amp;
+                  eco visarjan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. HERITAGE DARSHAN GALLERY SECTION -->
+      <section class="gallery-section" id="gallery">
+        <div class="section-container">
+          <div class="section-header center">
+            <span class="section-tag"
+              ><i class="fa-solid fa-camera"></i> DARSHAN HIGHLIGHTS</span
+            >
+            <h2 class="section-title">Royal Gallery &amp; Pandal Moments</h2>
+            <div class="header-divider"></div>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-grid-item item-large">
+              <img
+                src="images/hero_ganesha.png"
+                alt="Royal Pandal Darshan 2026"
+              />
+              <div class="gallery-item-overlay">
+                <h4>Royal Mandap Decoration</h4>
+                <p>Shree Ganesh Utsav 2026</p>
+              </div>
+            </div>
+
+            <div class="gallery-grid-item">
+              <img src="images/without_idol.png" alt="Mandap Architecture" />
+              <div class="gallery-item-overlay">
+                <h4>Vedic Sanctuary Mandap</h4>
+                <p>Golden Architecture</p>
+              </div>
+            </div>
+
+            <div class="gallery-grid-item">
+              <img src="images/idol.png" alt="Shree Ganesh Idol" />
+              <div class="gallery-item-overlay">
+                <h4>Eco-Friendly Divine Idol</h4>
+                <p>Ornate Aasan Craftsmanship</p>
+              </div>
+            </div>
+
+            <div class="gallery-grid-item">
+              <img src="images/hero_ganesha.png" alt="Maha Aarti Night" />
+              <div class="gallery-item-overlay">
+                <h4>Maha Aarti Illumination</h4>
+                <p>Royal 108 Deep Pooja</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. PANDAL LOCATION & MAP SECTION -->
+      <section class="location-section" id="location">
+        <div class="section-container">
+          <div class="section-header center">
+            <span class="section-tag"
+              ><i class="fa-solid fa-map-location-dot"></i> VENUE LOCATION</span
+            >
+            <h2 class="section-title">Pandal Address &amp; Navigation</h2>
+            <div class="header-divider"></div>
+          </div>
+
+          <div class="location-wrapper">
+            <div class="location-info-card">
+              <span class="info-badge"
+                ><i class="fa-solid fa-building-columns"></i> GRAND MANDAP</span
+              >
+              <h3>Shree Ganesh Utsav Pavilion</h3>
+              <p class="location-address">
+                <i class="fa-solid fa-location-dot icon-left"></i>
+                Rane Residence, Deshmukh Estate Grounds, M.G. Road, Mumbai,
+                Maharashtra
+              </p>
+
+              <div class="info-details-list">
+                <div class="detail-row">
+                  <i class="fa-solid fa-clock"></i>
+                  <span>Darshan Timings: 06:00 AM &ndash; 11:30 PM Daily</span>
+                </div>
+                <div class="detail-row">
+                  <i class="fa-solid fa-square-parking"></i>
+                  <span>Valet &amp; Dedicated Devotee Parking Available</span>
+                </div>
+                <div class="detail-row">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>Family Helpline: +91 98765 43210</span>
+                </div>
+              </div>
+
+              <a
+                href="https://maps.google.com"
+                target="_blank"
+                rel="noopener"
+                class="btn-solid-gold btn-location-map"
+              >
+                <i class="fa-solid fa-diamond-turn-right icon-left"></i> Get
+                Google Maps Directions
+              </a>
+            </div>
+
+            <!-- Stylized Map Placeholder Wrapper -->
+            <div class="location-map-card">
+              <iframe
+                title="Pandal Map Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.7483861214065!2d72.8257437!3d19.0504303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Interactive RSVP Modal Backdrop -->
+    <div class="rsvp-modal-backdrop" id="rsvpModal">
+      <div class="rsvp-modal-card">
+        <button class="modal-close-btn" id="closeRsvpModal">&times;</button>
+        <span class="modal-tag"
+          ><i class="fa-solid fa-crown"></i> CONFIRM ATTENDANCE</span
+        >
+        <h3 class="modal-title">Shree Ganesh Utsav 2026 RSVP</h3>
+        <p class="modal-desc">
+          Please fill out your details so we can arrange royal seating &amp;
+          Maha Prasad for your family.
+        </p>
+
+        <form class="rsvp-form" id="rsvpForm">
+          <div class="form-group">
+            <label for="guestName">Full Name</label>
+            <input
+              type="text"
+              id="guestName"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="guestPhone">Phone Number</label>
+            <input
+              type="tel"
+              id="guestPhone"
+              placeholder="Enter your 10-digit mobile"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guestCount">Number of Family Members</label>
+              <select id="guestCount" required>
+                <option value="1">1 Person</option>
+                <option value="2">2 Persons</option>
+                <option value="3-5" selected>3 &ndash; 5 Family Members</option>
+                <option value="5+">More than 5</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="darshanDate">Preferred Darshan Date</label>
+              <select id="darshanDate" required>
+                <option value="07 Sep">07 Sep &ndash; Sthapna Pooja</option>
+                <option value="08 Sep">08 Sep &ndash; Daily Aarti</option>
+                <option value="09 Sep">09 Sep &ndash; Cultural Night</option>
+                <option value="10 Sep">10 Sep &ndash; Maha Prasad</option>
+                <option value="17 Sep">17 Sep &ndash; Visarjan Sohala</option>
+              </select>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="btn-royal-gold-engraved btn-modal-submit"
+          >
+            Confirm Invitation RSVP
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Royal Footer -->
+    <footer class="luxury-footer">
+      <div class="footer-container">
+        <div class="footer-brand-col">
+          <div class="footer-logo">
+            <i class="fa-solid fa-crown"></i>
+            <span>SHREE GANESH UTSAV 2026</span>
+          </div>
+          <p class="footer-blessing">
+            May Lord Ganesha bless you and your family with peace, prosperity,
+            good health, and eternal happiness.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Quick Navigation</h5>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Utsav</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#location">Location</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h5>Host Family</h5>
+          <p><strong>The Rane &amp; Deshmukh Family</strong></p>
+          <p><i class="fa-solid fa-phone icon-left"></i> +91 98765 43210</p>
+          <p>
+            <i class="fa-solid fa-envelope icon-left"></i>
+            rsvp@ganpatiutsav2026.com
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>
+          &copy; 2026 Shree Ganesh Utsav. All Rights Reserved &bull; Crafted
+          with Devotion
+        </p>
+      </div>
+    </footer>
+
+    <!-- Custom Logic -->
+    <script src="script.js"></script>
+  </body>
+</html>
